@@ -1,0 +1,61 @@
+
+Executable  Functionality   Reads *.Pts?    Reads *.Inp?   Reads *.ot?
+
+buildDA   Builds a single level mesh    Yes   No  Yes
+
+checkError  Checks approximation error in solution  Yes Yes No
+
+createCoarser Writes out the coarsest octants Yes Yes No
+
+downSample Writes the anchors of the coarsest octree Yes Yes No
+
+dumpMesh Dumps out the mesh No Yes Yes 
+
+elasticitySolver Solves linear elasticity problem Yes Yes No
+
+justBal Balanced octree No No Yes
+
+justCoarsen Coarsens octree No No Yes
+
+newElasMesh Setup multigrid No Yes No
+
+newElasSolver Solves Linear elasticity No Yes No
+
+octLaplacian solves laplacian Yes Yes No
+
+omgNeumann_2spheres solves laplacian No Yes Yes
+
+omgNeumann_ex1 solves laplacian Yes Yes No
+
+omgNeumann_ex2 solves laplacian Yes Yes No
+
+omgNeumann_ex3 solves laplacian Yes Yes No
+
+pts2Mesh dumps VTK file containing partition info Yes Yes No
+
+rippleBal runs ripple algorithm No No Yes
+
+runScal balances octree Yes No No 
+
+seqRipple Runs ripple algorithm No No Yes
+
+seqRipplePtr Runs ripple algorithm No No Yes
+
+testConAndBal construct and balances octree No No No 
+
+testConBalAndCoarsen constructs, balances and coarsest octree No No No 
+
+testElasMatVec runs a few matvecs No Yes No
+
+testShFn No No No
+
+tstMatVec uses DA Yes Yes No
+
+tstMg uses multigrid Yes Yes No
+
+tstRegularMg Uses Multigrid on regular octree No Yes No
+
+tstRipple Runs Ripple Algorithm  Yes No No
+
+
+
