@@ -1750,14 +1750,14 @@ namespace par {
           listA[listA.size()-1] : listB[listB.size()-1]);
 
       // We will do a full merge first ...
-      unsigned int list_size = static_cast<unsigned int>(listA.size() + listB.size());
+      size_t list_size = listA.size() + listB.size();
 
       std::vector<T> scratch_list(list_size);
 
       unsigned int  index1 = 0;
       unsigned int  index2 = 0; 
 
-      for (int i = 0; i < list_size; i++) {
+      for (size_t i = 0; i < list_size; i++) {
         //The order of (A || B) is important here, 
         //so that index2 remains within bounds
         if ( (index1 < listA.size()) && 
