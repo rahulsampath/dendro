@@ -99,7 +99,7 @@ namespace seq {
 
   template<typename T> void makeVectorUnique(std::vector<T>& vecT, bool isSorted) {
     if(vecT.size() < 2) { return;}
-    if(!isSorted) { sort(vecT.begin(),vecT.end()); }
+    if(!isSorted) { std::sort( (&(vecT[0])), ( (&(vecT[0])) + (vecT.size()) ) ); }
     std::vector<T> tmp(vecT.size());
     //Using the array [] is faster than the vector version
     T* tmpPtr = (&(*(tmp.begin())));
