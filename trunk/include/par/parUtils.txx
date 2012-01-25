@@ -1352,7 +1352,7 @@ namespace par {
       if (npes == 1) {
         std::cout <<" have to use seq. sort"
           <<" since npes = 1 . inpSize: "<<(arr.size()) <<std::endl;
-        std::sort(arr.begin(), arr.end());
+        std::sort( (&(arr[0])), ( (&(arr[0])) + (arr.size()) ) );
         SortedElem  = arr;
         PROF_SORT_END
       } 
@@ -1432,7 +1432,7 @@ namespace par {
 
       nelem = arr.size();
 
-      std::sort(arr.begin(),arr.end());
+      std::sort( (&(arr[0])), ( (&(arr[0])) + (arr.size()) ) );
 
       std::vector<T> sendSplits(npes-1);
       splitters.resize(npes);
@@ -1528,7 +1528,7 @@ namespace par {
       delete [] rdispls;
       rdispls = NULL;
 
-      sort(SortedElem.begin(), SortedElem.end());
+      std::sort( (&(SortedElem[0])), ( (&(SortedElem[0])) + (SortedElem.size()) ) );
 
       PROF_SORT_END
     }//end function
@@ -1697,7 +1697,7 @@ namespace par {
       assert(!(in.empty()));
 
       //Local Sort first
-      std::sort(in.begin(),in.end());
+      std::sort( (&(in[0])), ( (&(in[0])) + (in.size()) ) );
 
       if(npes > 1) {
 
