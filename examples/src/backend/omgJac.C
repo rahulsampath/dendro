@@ -1606,10 +1606,11 @@ PetscErrorCode Jacobian2MatDestroy(Mat J) {
   unsigned char elemType = 0;\
   GET_ETYPE_BLOCK(elemType,hnMask,childNum)\
   for(int k = 0; k < 8; k++) {\
-    diagArr[indices[k]] +=  ((fac1*(LaplacianType2Stencil[childNum][elemType][k][k])) +\
-        (fac2*(MassType2Stencil[childNum][elemType][k][k])));\
+    diagArr[indices[k]] +=  ((fac1*(LaplacianType2Stencil[childNum][elemType][k][k])) ); \
   } /*end k*/\
 }
+
+// (fac2*(MassType2Stencil[childNum][elemType][k][k])));
 
 #define JAC_TYPE2_DIAG_BLOCK {\
   ot::DA* da = damg->da;\
@@ -1639,6 +1640,8 @@ PetscErrorCode Jacobian2MatDestroy(Mat J) {
 
 PetscErrorCode Jacobian2MatGetDiagonal(Mat J, Vec diag) {
   PetscFunctionBegin;
+  
+  // printf("Jacobian Type 2 MatGetDiagonal\n");
 
   PetscLogEventBegin(Jac2DiagEvent,diag,0,0,0);
 
@@ -1678,11 +1681,12 @@ PetscErrorCode Jacobian2MatGetDiagonal(Mat J, Vec diag) {
   GET_ETYPE_BLOCK(elemType,hnMask,childNum)\
   for(int k = 0;k < 8;k++) {\
     for(int j=0;j<8;j++) {\
-      outArr[indices[k]] +=  (((fac1*(LaplacianType2Stencil[childNum][elemType][k][j])) +\
-            (fac2*(MassType2Stencil[childNum][elemType][k][j])))*inArr[indices[j]]);\
+      outArr[indices[k]] +=  (((fac1*(LaplacianType2Stencil[childNum][elemType][k][j])) )*inArr[indices[j]]);\
     }/*end for j*/\
   }/*end for k*/\
 }
+
+// (fac2*(MassType2Stencil[childNum][elemType][k][j])))*inArr[indices[j]]);\
 
 #define JAC_TYPE2_MULT_BLOCK {\
   ot::DA* da = damg->da;\
@@ -1776,6 +1780,8 @@ PetscErrorCode Jacobian2MatMult(Mat J, Vec in, Vec out)
 {
   PetscFunctionBegin;
 
+  // printf("Jacobian Type 2 MatMult\n");
+
   PetscLogEventBegin(Jac2MultEvent,in,out,0,0);
 
   ot::DAMG damg;
@@ -1784,6 +1790,7 @@ PetscErrorCode Jacobian2MatMult(Mat J, Vec in, Vec out)
   Jac2MFreeData *data = (static_cast<Jac2MFreeData*>(damg->user));
 
   if(data->isFinestLevel) {
+    // printf("Finest Level\n");
     PetscLogEventBegin(Jac2FinestMultEvent,in,out,0,0);
   }
 
