@@ -96,7 +96,7 @@ int main(int argc, char ** argv ) {
   MPI_Comm_size(MPI_COMM_WORLD,&size);
   MPI_Comm_rank(MPI_COMM_WORLD,&rank);
   if(argc < 3) {
-    std::cerr << "Usage: " << argv[0] << "inpfile  maxDepth[30] solveU[0]\
+    std::cerr << "Usage: " << argv[0] << " inpfile  maxDepth[30] solveU[0]\
       writeB[0] dim[3] maxNumPtsPerOctant[1] incCorner[1] compressLut[1] mgLoadFac[2.0] " << std::endl;
     return -1;
   }

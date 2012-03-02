@@ -411,7 +411,7 @@ PetscErrorCode dummyRestrictMatVecType1(TransferOpData *data) {
 
   PROF_MG_RESTRICT_DUMMY_BEGIN
 
-    ot::DA * dac = data->dac;
+  ot::DA * dac = data->dac;
   ot::DA * daf = data->daf;
 
   ot::FineTouchedDummyStatus* fineTouchedDummyFlagsArr;
