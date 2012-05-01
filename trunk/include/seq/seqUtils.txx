@@ -113,9 +113,8 @@ namespace seq {
         tmpSize++;
       }
     }//end for
-    vecT.clear();
-    vecT.insert(vecT.begin(), tmp.begin(), (tmp.begin() + tmpSize));
-    tmp.clear();
+    tmp.resize(tmpSize);
+    swap(vecT, tmp);
   }//end function
 
   template <typename T>
