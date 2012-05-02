@@ -1197,7 +1197,7 @@ namespace par {
 #endif
 
       // reset the pointer ...
-      nodeList = newNodes;
+      swap(nodeList, newNodes);
       newNodes.clear();
 
       // clean up...
@@ -1243,7 +1243,7 @@ namespace par {
         //Sort partitions vecT and tmpVec internally.
         par::sampleSort<T>(vecT, tmpVec, comm);	  		  	
       }else {
-        tmpVec = vecT;
+        swap(tmpVec, vecT);
       }
 
 #ifdef __DEBUG_PAR__
