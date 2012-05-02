@@ -1323,7 +1323,7 @@ namespace par {
       MPI_Barrier(comm);
 #endif
 
-      vecT = tmpVec;
+      swap(vecT, tmpVec);
       tmpVec.clear();
       par::partitionW<T>(vecT, NULL, comm);
 
