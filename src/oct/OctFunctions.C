@@ -285,11 +285,9 @@ namespace ot {
     }
   }//end function
 
-  //If one of first and second is an ancestor of the other, it is returned.  
   TreeNode getNCA(TreeNode first, TreeNode second) {
 #ifdef __DEBUG_OCT__
     assert(areComparable(first,second));
-    assert(first != second);
 #endif
     unsigned int fx = first.getX();
     unsigned int sx = second.getX();
@@ -300,13 +298,20 @@ namespace ot {
     unsigned int maxDepth = first.getMaxDepth(); 
     unsigned int dim = first.getDim(); 
     unsigned int maxDiff = (unsigned int)(std::max((std::max((fx^sx),(fy^sy))),(fz^sz)));
-    unsigned int maxDiffBinLen = binOp::binLength(maxDiff);
-    //Eliminate the last maxDiffBinLen bits.
-    unsigned int ncaX = ((fx>>maxDiffBinLen)<<maxDiffBinLen);
-    unsigned int ncaY = ((fy>>maxDiffBinLen)<<maxDiffBinLen);
-    unsigned int ncaZ = ((fz>>maxDiffBinLen)<<maxDiffBinLen);
-    unsigned int ncaLev = (maxDepth - maxDiffBinLen);
-    TreeNode nca(ncaX,ncaY,ncaZ,ncaLev,dim,maxDepth);
+    TreeNode nca;
+    if(maxDiff > 0) {
+      unsigned int maxDiffBinLen = binOp::binLength(maxDiff);
+      //Eliminate the last maxDiffBinLen bits.
+      unsigned int ncaX = ((fx>>maxDiffBinLen)<<maxDiffBinLen);
+      unsigned int ncaY = ((fy>>maxDiffBinLen)<<maxDiffBinLen);
+      unsigned int ncaZ = ((fz>>maxDiffBinLen)<<maxDiffBinLen);
+      unsigned int ncaLev = (maxDepth - maxDiffBinLen);
+      nca = TreeNode(ncaX, ncaY, ncaZ, ncaLev, dim, maxDepth);
+    } else {
+      unsigned int fL = first.getLevel();
+      unsigned int sL = second.getLevel();
+      nca = TreeNode(fx, fy, fz, (std::min(fL, sL)), dim, maxDepth);
+    }
     return nca;
   }//end function
 
