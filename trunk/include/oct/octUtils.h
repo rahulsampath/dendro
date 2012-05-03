@@ -602,8 +602,8 @@ namespace ot {
   /**
     @author Rahul Sampath
     @return the nearest common ancestor of first and second.
-    If one of them is the ancestor of the other it is returned.
-Note: first must be different from second.
+    This works even if both the inputs are equal or if one 
+    of them is the ancestor of the other.
 */
   TreeNode getNCA(TreeNode first, TreeNode second);
 
