@@ -4,10 +4,10 @@
   @author Rahul Sampath, rahul.sampath@gmail.com
   */
 
-#include "omg.h"
-#include "oda.h" 
+#include "omg/omg.h"
+#include "oda/oda.h" 
+#include "par/parUtils.h"
 #include "omgJac.h"
-#include "parUtils.h"
 
 #define SQUARE(x) ((x)*(x))
 

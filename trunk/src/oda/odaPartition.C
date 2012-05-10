@@ -6,10 +6,10 @@
   @author Hari Sundar, hsundar@gmail.com
   */
 
-#include "oda.h"
-#include "parUtils.h"
-#include "seqUtils.h"
-#include "testUtils.h"
+#include "oda/oda.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
+#include "test/testUtils.h"
 
 #ifdef __DEBUG__
 #ifndef __DEBUG_DA__

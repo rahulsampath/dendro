@@ -5,8 +5,8 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
   */
 
-#include "TreeNode.h"
-#include "TreeNodePointer.h"
+#include "oct/TreeNode.h"
+#include "oct/TreeNodePointer.h"
 
 namespace ot {
 

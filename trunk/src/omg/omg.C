@@ -4,16 +4,16 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
   */
 
-#include "dtypes.h"
 #include "petscpc.h"
 #include "petscmg.h"
 #include "petscmat.h"
 #include "private/pcimpl.h"
-#include "omg.h"
-#include "oda.h"
-#include "odaUtils.h" 
-#include "parUtils.h"
 #include <iostream>
+#include "par/dtypes.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
+#include "oda/odaUtils.h" 
+#include "par/parUtils.h"
 #include "dendro.h"
 
 #ifndef iC

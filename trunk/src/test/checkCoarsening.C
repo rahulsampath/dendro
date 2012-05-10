@@ -1,11 +1,11 @@
 
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
-#include "octUtils.h"
-#include "TreeNode.h"
-#include "parUtils.h"
-#include "testUtils.h"
+#include "sys/sys.h"
+#include "oct/octUtils.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
+#include "test/testUtils.h"
 #include <cstring>
 #include "externVars.h"
 #include "dendro.h"

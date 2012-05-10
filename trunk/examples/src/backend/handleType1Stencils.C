@@ -8,7 +8,7 @@
 #include <cstdio>
 #include <cassert>
 #include <iostream>
-#include "parUtils.h"
+#include "par/parUtils.h"
 #include "handleStencils.h"
 
 /*Type 1 Matrices: Coarse is the parent of the Fine elements.*/

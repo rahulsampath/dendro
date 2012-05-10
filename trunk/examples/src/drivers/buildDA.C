@@ -6,12 +6,12 @@
 
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
-#include "parUtils.h"
-#include "TreeNode.h"
-#include "colors.h"
-#include "oda.h"
+#include "sys/sys.h"
+#include "par/parUtils.h"
+#include "oct/TreeNode.h"
+#include "oda/oda.h"
 #include <cstdlib>
+#include "colors.h"
 #include "externVars.h"
 #include "dendro.h"
 

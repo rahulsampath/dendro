@@ -2,7 +2,7 @@
 #ifndef __LOOP_COUNTERS_H__
 #define __LOOP_COUNTERS_H__
 
-#include "Point.h"
+#include "point/Point.h"
 
 namespace ot {
         struct LoopCounters {

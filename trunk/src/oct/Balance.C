@@ -6,11 +6,11 @@
   @author Hari Sundar, hsundar@gmail.com
   */
 
-#include "parUtils.h"
-#include "seqUtils.h"
-#include "TreeNode.h"
-#include "TreeNodePointer.h"
-#include "testUtils.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
+#include "oct/TreeNode.h"
+#include "oct/TreeNodePointer.h"
+#include "test/testUtils.h"
 #include "dendro.h"
 
 #ifdef __DEBUG__

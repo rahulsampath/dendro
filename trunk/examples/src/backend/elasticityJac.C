@@ -5,9 +5,9 @@
   */
 
 #include "petscmat.h"
-#include "omg.h"
-#include "oda.h"
-#include "odaUtils.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
+#include "oda/odaUtils.h"
 #include "elasticityJac.h"
 
 #ifdef PETSC_USE_LOG

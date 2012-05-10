@@ -6,15 +6,15 @@
   */
 
 #include "mpi.h"
-#include "odaUtils.h"
-#include "TreeNode.h"
-#include "nodeAndValues.h"
 #include <cstdio>
 #include <iostream>
 #include <cassert>
-#include "oda.h"
-#include "parUtils.h"
-#include "seqUtils.h"
+#include "oda/odaUtils.h"
+#include "oct/TreeNode.h"
+#include "oct/nodeAndValues.h"
+#include "oda/oda.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
 
 #ifdef __DEBUG__
 #ifndef __DEBUG_DA__

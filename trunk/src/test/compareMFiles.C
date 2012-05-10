@@ -2,10 +2,10 @@
 #include "mpi.h"
 #include <iostream>
 #include "petsc.h"
-#include "sys.h"
+#include "sys/sys.h"
 #include <vector>
-#include "parUtils.h"
-#include "testUtils.h"
+#include "par/parUtils.h"
+#include "test/testUtils.h"
 #include "externVars.h"
 #include "dendro.h"
 

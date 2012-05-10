@@ -9,8 +9,8 @@
 #ifndef _TREENODE_H_
 #define _TREENODE_H_
 
-#include "octUtils.h"
-#include "Point.h"
+#include "oct/octUtils.h"
+#include "point/Point.h"
 #include <iostream>
 
 #ifdef __DEBUG__

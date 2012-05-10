@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <iostream>
 #include <cassert>
-#include "parUtils.h"
+#include "par/parUtils.h"
 #include "handleStencils.h"
 
 int createShFnMat(double******& shFnMat) {

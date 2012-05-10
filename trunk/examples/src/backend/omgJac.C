@@ -7,8 +7,8 @@
 #include "petsc.h"
 #include "petscmat.h"
 #include "petscvec.h"
-#include "omg.h"
-#include "oda.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
 #include "omgJac.h"
 #include "odaJac.h"
 

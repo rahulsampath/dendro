@@ -4,9 +4,9 @@
 #include <cstdlib>
 #include <ctime>
 #include "petscvec.h"
-#include "dtypes.h"
-#include "omg.h"
-#include "parUtils.h"
+#include "par/dtypes.h"
+#include "omg/omg.h"
+#include "par/parUtils.h"
 #include "externVars.h"
 #include "dendro.h"
 

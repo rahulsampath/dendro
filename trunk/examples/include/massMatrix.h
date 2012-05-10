@@ -28,7 +28,7 @@
 *  the element matrix needs to be done within this or a derived class.
 */
 
-#include "feMatrix.h"
+#include "fem/feMatrix.h"
 
 class massMatrix : public ot::fem::feMatrix<massMatrix>
 {

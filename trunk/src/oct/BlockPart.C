@@ -6,8 +6,8 @@
   @author Hari Sundar, hsundar@gmail.com
   */
 
-#include "TreeNode.h"
-#include "parUtils.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
 
 #ifdef __DEBUG__
 #ifndef __DEBUG_OCT__

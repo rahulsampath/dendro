@@ -1,11 +1,11 @@
 
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
 #include <vector>
-#include "TreeNode.h"
-#include "parUtils.h"
-#include "oda.h"
+#include "sys/sys.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
+#include "oda/oda.h"
 #include "handleStencils.h"
 #include "odaJac.h"
 #include "colors.h"

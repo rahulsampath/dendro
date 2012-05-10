@@ -1,8 +1,8 @@
 
 #include "mpi.h"
-#include "nodeAndValues.h"
-#include "TreeNode.h"
-#include "parUtils.h"
+#include "oct/nodeAndValues.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
 #include "externVars.h"
 
 int main(int argc, char** argv) {

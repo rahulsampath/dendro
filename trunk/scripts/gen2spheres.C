@@ -4,7 +4,7 @@
 // Default for outerRadius is 0.4
 //
 
-#include "TreeNode.h"
+#include "oct/TreeNode.h"
 #include <iostream>
 #include <algorithm>
 #include "externVars.h"

@@ -4,10 +4,10 @@
   @author Rahul Sampath, rahul.sampath@gmail.com
   */
 
-#include "TreeNode.h"
-#include "testUtils.h"
-#include "parUtils.h"
-#include "seqUtils.h"
+#include "oct/TreeNode.h"
+#include "test/testUtils.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
 #include <cstring>
 
 namespace ot {

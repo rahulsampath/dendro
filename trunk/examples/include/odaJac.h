@@ -7,7 +7,7 @@
 #ifndef __ODA_JAC_H
 #define __ODA_JAC_H
 
-#include "oda.h"
+#include "oda/oda.h"
 #include "petscmat.h"
 #include "petscvec.h"
 
