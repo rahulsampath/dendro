@@ -6,11 +6,11 @@
 
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
+#include "sys/sys.h"
 #include <vector>
-#include "TreeNode.h"
-#include "parUtils.h"
-#include "omg.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
+#include "omg/omg.h"
 #include "handleStencils.h"
 #include "elasticityJac.h"
 #include "omgJac.h"

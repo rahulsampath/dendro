@@ -6,8 +6,8 @@
 
 #include "petsc.h"
 #include "petscvec.h"
-#include "omg.h"
-#include "oda.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
 #include "elasticityJac.h"
 #include "vecMass.h"
 

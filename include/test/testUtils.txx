@@ -4,9 +4,9 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
   */
 
-#include "dtypes.h"
-#include "parUtils.h"
-#include "seqUtils.h"
+#include "par/dtypes.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
 #include <iostream>
 
 namespace seq { 

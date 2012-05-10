@@ -1,10 +1,11 @@
 
+
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
-#include "TreeNode.h"
-#include "omg.h"
-#include "oda.h"
+#include "sys/sys.h"
+#include "oct/TreeNode.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
 #include "omgJac.h"
 #include <cstdlib>
 #include "handleStencils.h"

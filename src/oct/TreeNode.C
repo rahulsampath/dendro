@@ -4,10 +4,10 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
   */
 
-#include "TreeNode.h"
-#include "binUtils.h"
-#include "parUtils.h"
-#include "seqUtils.h"
+#include "oct/TreeNode.h"
+#include "binOps/binUtils.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
 
 #ifdef __DEBUG__
 #ifndef __DEBUG_TN__

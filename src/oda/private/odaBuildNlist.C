@@ -6,12 +6,12 @@
   @author Hari Sundar, hsundar@gmail.com
   */
 
-#include "oda.h"
-#include "parUtils.h"
-#include "seqUtils.h"
+#include "oda/oda.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
+#include "test/testUtils.h"
+#include "oct/nodeAndRanks.h"
 #include "colors.h"
-#include "nodeAndRanks.h"
-#include "testUtils.h"
 
 #ifdef __DEBUG__
 #ifndef __DEBUG_DA_NLIST__

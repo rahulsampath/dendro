@@ -5,8 +5,8 @@
   */
 
 #include "petsc.h"
-#include "omg.h"
-#include "oda.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
 #include "vecMass.h"
 #include "elasticityJac.h"
 

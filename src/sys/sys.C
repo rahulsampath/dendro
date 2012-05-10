@@ -5,12 +5,12 @@
   */
 
 #include "petsc.h"
-#include "blockDiag.h"
-#include "octUtils.h"
-#include "parUtils.h"
-#include "oda.h"
-#include "odaUtils.h"
-#include "omg.h"
+#include "pc/blockDiag.h"
+#include "oct/octUtils.h"
+#include "par/parUtils.h"
+#include "oda/oda.h"
+#include "oda/odaUtils.h"
+#include "omg/omg.h"
 
 namespace ot {
 

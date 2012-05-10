@@ -5,13 +5,13 @@
   */
 
 #include "petsc.h"
-#include "parUtils.h"
-#include "seqUtils.h"
-#include "omg.h"
-#include "oda.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
+#include "omg/omg.h"
+#include "oda/oda.h"
+#include "oct/nodeAndValues.h"
 #include "odaJac.h"
 #include "omgJac.h"
-#include "nodeAndValues.h"
 
 extern double****** ShapeFnStencil;
 

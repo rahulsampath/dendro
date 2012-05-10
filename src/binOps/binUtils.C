@@ -8,7 +8,7 @@
 
 #include <vector>
 #include <cassert>
-#include "binUtils.h"
+#include "binOps/binUtils.h"
 
 namespace binOp {
 

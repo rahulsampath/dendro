@@ -8,9 +8,9 @@
   @author Santi Swaroop Adavani, santis@gmail.com
  */
 
-#include "binUtils.h"
-#include "seqUtils.h"
-#include "dtypes.h"
+#include "binOps/binUtils.h"
+#include "seq/seqUtils.h"
+#include "par/dtypes.h"
 #include <cassert>
 #include <iostream>
 #include <algorithm>

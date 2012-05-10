@@ -11,16 +11,16 @@
 #define __OCT_DA_H__
 
 #include "mpi.h"
-#include "matRecord.h"
-#include "loopCounters.h"
-#include "updateCtx.h"
-#include "odaUtils.h"
-#include "cnumEtypes.h"
-#include "Point.h"
-#include <vector>
 #include "petsc.h"
 #include "petscvec.h"
 #include "petscmat.h"
+#include <vector>
+#include "oda/matRecord.h"
+#include "oda/loopCounters.h"
+#include "oda/updateCtx.h"
+#include "oda/odaUtils.h"
+#include "oda/cnumEtypes.h"
+#include "point/Point.h"
 #include "dendro.h"
 
 #ifndef iC

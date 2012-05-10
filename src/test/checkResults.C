@@ -4,8 +4,8 @@
   */
 
 #include "mpi.h"
-#include "TreeNode.h"
-#include "testUtils.h"
+#include "oct/TreeNode.h"
+#include "test/testUtils.h"
 #include "externVars.h"
 #include <cstdio>
 #include <iostream>

@@ -15,7 +15,7 @@
 #ifndef _STIFFNESSMATRIX_H_
 #define _STIFFNESSMATRIX_H_
 
-#include "feMatrix.h"
+#include "fem/feMatrix.h"
 
 /**
  *  @brief	Main class for finite element assembly of a generic stiffness matrix.

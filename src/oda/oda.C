@@ -5,10 +5,10 @@
   @author Hari Sundar, hsundar@gmail.com
   */
 
-#include "oda.h"
-#include "parUtils.h"
+#include "oda/oda.h"
+#include "par/parUtils.h"
+#include "test/testUtils.h"
 #include "colors.h"
-#include "testUtils.h"
 #include "dendro.h"
 
 #ifdef __DEBUG__

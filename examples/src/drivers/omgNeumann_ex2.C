@@ -1,14 +1,15 @@
+
 #include <mpi.h>
 #include <cstdio>
-#include "oda.h"
-#include "omg.h"
-#include "Point.h"
-#include "parUtils.h"
-#include "octUtils.h"
-#include "TreeNode.h"
+#include "oda/oda.h"
+#include "omg/omg.h"
+#include "point/Point.h"
+#include "par/parUtils.h"
+#include "oct/octUtils.h"
+#include "oct/TreeNode.h"
+#include "sys/sys.h"
 #include "handleStencils.h"
 #include <cstdlib>
-#include "sys.h"
 #include "externVars.h"
 #include <sstream>
 #include "omgNeumann.h"

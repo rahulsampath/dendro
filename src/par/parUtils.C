@@ -6,9 +6,9 @@
   */
 
 #include "mpi.h"
-#include "binUtils.h"
-#include "dtypes.h"
-#include "parUtils.h"
+#include "binOps/binUtils.h"
+#include "par/dtypes.h"
+#include "par/parUtils.h"
 
 #ifdef __DEBUG__
 #ifndef __DEBUG_PAR__

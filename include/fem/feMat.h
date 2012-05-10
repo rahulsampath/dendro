@@ -2,7 +2,7 @@
 #define __FE_MAT_H_
 
 #include "petscda.h"
-#include "oda.h"
+#include "oda/oda.h"
 
 namespace ot {
   namespace fem {

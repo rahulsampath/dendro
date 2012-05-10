@@ -5,13 +5,13 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
  */
 
-#include "TreeNode.h"
-#include "indexHolder.h"
-#include "Sort.h" /**< The non-standard sort algorithm. */
-#include "dtypes.h"
-#include "odaUtils.h"
-#include "parUtils.h"
-#include "cnumEtypes.h"
+#include "oct/TreeNode.h"
+#include "seq/indexHolder.h"
+#include "seq/Sort.h" /**< The non-standard sort algorithm. */
+#include "par/dtypes.h"
+#include "oda/odaUtils.h"
+#include "par/parUtils.h"
+#include "oda/cnumEtypes.h"
 #include "dendro.h"
 
 #ifdef __DEBUG__

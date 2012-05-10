@@ -6,11 +6,11 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
   */
 
-#include "parUtils.h"
-#include "TreeNode.h"
+#include "par/parUtils.h"
+#include "oct/TreeNode.h"
 #include <cassert>
-#include "nodeAndValues.h"
-#include "binUtils.h"
+#include "oct/nodeAndValues.h"
+#include "binOps/binUtils.h"
 #include "dendro.h"
 
 #ifdef __DEBUG__

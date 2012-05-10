@@ -5,8 +5,8 @@
   @author Rahul S. Sampath, rahul.sampath@gmail.com
   */
 
-#include "TreeNode.h"
-#include "parUtils.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
 #include "dendro.h"
 
 #ifdef __DEBUG__

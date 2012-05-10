@@ -8,9 +8,9 @@ Nearest Common Ancestor, adding positive boundaries, marking hanging nodes
 @author Hari Sundar, hsundar@gmail.com
 */
 
-#include "TreeNode.h"
-#include "parUtils.h"
-#include "seqUtils.h"
+#include "oct/TreeNode.h"
+#include "par/parUtils.h"
+#include "seq/seqUtils.h"
 #include <cstring>
 
 #ifdef __DEBUG__

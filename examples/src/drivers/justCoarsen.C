@@ -1,9 +1,9 @@
 
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
-#include "octUtils.h"
-#include "TreeNode.h"
+#include "sys/sys.h"
+#include "oct/octUtils.h"
+#include "oct/TreeNode.h"
 #include <cstdlib>
 #include <cstring>
 #include "externVars.h"

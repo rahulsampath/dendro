@@ -6,11 +6,11 @@
 
 #include "mpi.h"
 #include "petsc.h"
-#include "sys.h"
+#include "sys/sys.h"
 #include "petscmat.h"
 #include "petscvec.h"
 #include "petscksp.h"
-#include "oda.h"
+#include "oda/oda.h"
 #include <cstdlib>
 #include "massMatrix.h"
 #include "stiffnessMatrix.h"
