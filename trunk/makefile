@@ -3,6 +3,7 @@ SHELL = /bin/sh
 
 include ${PETSC_DIR}/${PETSC_ARCH}/conf/petscvariables
 include ${PETSC_DIR}/conf/variables
+PCC = mpicxx
 
 CEXT = C
 CFLAGS = -D__USE_PVT_DA_IN_MG__  -DPETSC_USE_LOG 
@@ -33,8 +34,6 @@ CFLAGS = -D__USE_PVT_DA_IN_MG__  -DPETSC_USE_LOG
 #-D__MEASURE_BPART_COMM__
 #-D__MEASURE_BAL_COMM__ 
 #-Wall -Wold-style-cast -Woverloaded-virtual -Weffc++ -Wp64
-
-GC = g++
 
 include ./makefileCore
 
