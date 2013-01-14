@@ -16,7 +16,7 @@ namespace seq {
     bool BinarySearch(const T* arr, unsigned int nelem, const T& key, unsigned int* ret_idx) {
       bool found = false;
       if(nelem > 0) {
-        T* pos = lower_bound(arr, (arr + nelem), key);
+        const T* pos = std::lower_bound(arr, (arr + nelem), key);
         if(pos != (arr + nelem)) {
           if((*pos) == key) {
             found = true;
@@ -34,7 +34,7 @@ namespace seq {
     int UpperBound(unsigned int nelem, const T* arr, unsigned int startIdx, const T& key) {
       int res = nelem;
       if(startIdx < nelem) {
-        T* pos = lower_bound((arr + startIdx), (arr + nelem), key);
+        const T* pos = std::lower_bound((arr + startIdx), (arr + nelem), key);
         res = pos - arr;
       }
       return res;
@@ -55,10 +55,10 @@ namespace seq {
       if(stIdx < endIdx) {
         if(arr[stIdx] <= key) {
           found = true;
-          std::vector<T>::iterator pos = upper_bound((arr.begin() + stIdx), (arr.begin() + endIdx), key);
+          typename std::vector<T>::const_iterator pos = std::upper_bound((arr.begin() + stIdx), (arr.begin() + endIdx), key);
           if(pos != (arr.begin() + endIdx)) {
             //assert((*pos) > key);
-            ret_idx = (pos - arr) - 1;
+            ret_idx = pos - arr.begin() - 1;
           } else {
             ret_idx = endIdx - 1;
           }
